@@ -1,6 +1,8 @@
 '''
 https://open.kattis.com/problems/glitchbot
 '''
+import sys
+
 def test():
     coords1 = [3, 2]
     instructs1 = ['forward', 'right', 'forward', 'forward', 'left', 'forward', 'forward', 'left', 'forward', 'right', 'forward']
@@ -69,11 +71,12 @@ def checkPosEquality(coords, instructions):
                 continue 
         instructions[i] = x
 
-def main():
-    test()
-    coords = [int(coord) for coord in input().split(' ')]
-    instructions = [input().lower() for i in range(int(input()))]
-    print(checkPosEquality(coords, instructions))
-
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+        test()
+    else:
+        coords = [int(coord) for coord in input().split(' ')]
+        instructions = [input().lower() for i in range(int(input()))]
+        print(checkPosEquality(coords, instructions))
+
+    

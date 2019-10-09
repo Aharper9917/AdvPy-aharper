@@ -1,7 +1,7 @@
 """
 https://open.kattis.com/problems/nineknights
 """
-
+import sys
 
 def test():
     b1 = [[".", ".", "k", "k", "."], [".", ".", ".", ".", "."], [
@@ -56,14 +56,11 @@ def checkValidity(board):
         return "invalid"
     return 'valid'
 
-def main():
-    test()
-    board = readBoard()
-    # for row in board:
-    #     print(row)
-    print(checkValidity(board))
-
-        
-if __name__ == '__main__':
-    main()
-    
+if __name__ == "__main__":
+    if len(sys.argv) > 1 and sys.argv[1] == 'test':
+        test()
+    else:
+        board = readBoard()
+        # for row in board:
+        #     print(row)
+        print(checkValidity(board))

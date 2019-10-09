@@ -3,13 +3,13 @@
 Progress:
     {X}Hangman
     { }Kattis
-        {X}Part 1
-        {X}Part 2
-        { }Part 3
-        { }Part 4
-        {X}Part 5
-        {X}Part 6
+        {X} 9Knights 1.8 99%
+        {X} GlitchBot 1.8 99%
+        { } Part 3
+        { } Part 4
+        {X} Wizard of Odds 2.6 99%
+        {X} Puntovanje 2.6 99%
     { }Final Project
-        {X}Part 1
-        { }Part 2
-        { }Part 3
+        {X} Part 1
+        { } Part 2
+        { } Part 3
