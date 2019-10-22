@@ -44,6 +44,7 @@ if __name__ == "__main__":
         test()
     else:
         m,n,t = [int(x) for x in input().split()]
+        print('AC' if(solve(m,n,t)) else 'TLC')
         print(solve(m,n,t))
 
 
